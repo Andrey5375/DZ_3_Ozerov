@@ -1,0 +1,32 @@
+{
+    "network": {
+        "name": "LocalNetwork",
+        "ip_address": "192.168.1.1",
+        "subnet_mask": "255.255.255.0",
+        "gateway": "192.168.1.254",
+        "dns_servers": [
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    },
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "username": "admin",
+        "password": "secret",
+        "databases": [
+            "main_db",
+            "backup_db"
+        ]
+    },
+    "web_server": {
+        "server_name": "example.com",
+        "document_root": "/var/www/html",
+        "listen_ports": [
+            80,
+            443
+        ],
+        "ssl_certificate": "/etc/ssl/certs/example.com.crt",
+        "ssl_key": "/etc/ssl/private/example.com.key"
+    }
+}
